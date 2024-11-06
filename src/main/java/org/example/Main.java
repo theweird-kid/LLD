@@ -1,5 +1,9 @@
 package org.example;
 
+import decoratorPattern.BasePizza;
+import decoratorPattern.VegDelight;
+import decoratorPattern.decorator.ExtraCheese;
+import decoratorPattern.decorator.Mushroom;
 import observerPattern.observable.IphoneObservableImpl;
 import observerPattern.observable.StockObservable;
 import observerPattern.observer.EmailAlertObserverImpl;
@@ -9,6 +13,7 @@ import observerPattern.observer.NotificationAlertObserver;
 public class Main {
     public static void main(String[] args) {
 
+        /*
         // Observer Pattern
         StockObservable iphoneStockObservable = new IphoneObservableImpl();
 
@@ -21,6 +26,16 @@ public class Main {
         iphoneStockObservable.add(obv3);
 
         iphoneStockObservable.setStockCount(10);
+        */
 
+        // Decorator Pattern
+        BasePizza plainPizza = new VegDelight();
+        System.out.println("plain Veg Pizza: $" + plainPizza.cost());
+
+        BasePizza pizzaWithCheese = new ExtraCheese(new VegDelight());
+        System.out.println("pizza with extra Cheese: $" +pizzaWithCheese.cost());
+
+        BasePizza pizzaWithCheeseAndMushroom = new Mushroom(new ExtraCheese(new VegDelight()));
+        System.out.println("pizza with mushroom & Extra cheese: $" + pizzaWithCheeseAndMushroom.cost());
     }
 }
