@@ -1,4 +1,4 @@
-package decoratorPattern;
+package DecoratorPattern;
 
 public class Farmhouse extends BasePizza{
 

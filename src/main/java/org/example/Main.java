@@ -1,14 +1,9 @@
 package org.example;
 
-import decoratorPattern.BasePizza;
-import decoratorPattern.VegDelight;
-import decoratorPattern.decorator.ExtraCheese;
-import decoratorPattern.decorator.Mushroom;
-import observerPattern.observable.IphoneObservableImpl;
-import observerPattern.observable.StockObservable;
-import observerPattern.observer.EmailAlertObserverImpl;
-import observerPattern.observer.MobileAlertObserverImpl;
-import observerPattern.observer.NotificationAlertObserver;
+import DecoratorPattern.BasePizza;
+import DecoratorPattern.VegDelight;
+import DecoratorPattern.decorator.ExtraCheese;
+import DecoratorPattern.decorator.Mushroom;
 
 public class Main {
     public static void main(String[] args) {

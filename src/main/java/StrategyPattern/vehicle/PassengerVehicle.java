@@ -1,6 +1,6 @@
-package stratergyPattern.vehicle;
+package StrategyPattern.vehicle;
 
-import stratergyPattern.drive.NormalDrive;
+import StrategyPattern.drive.NormalDrive;
 
 public class PassengerVehicle extends Vehicle {
 

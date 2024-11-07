@@ -1,6 +1,6 @@
-package decoratorPattern.decorator;
+package DecoratorPattern.decorator;
 
-import decoratorPattern.BasePizza;
+import DecoratorPattern.BasePizza;
 
 public class ExtraCheese extends ToppingDecorator{
 

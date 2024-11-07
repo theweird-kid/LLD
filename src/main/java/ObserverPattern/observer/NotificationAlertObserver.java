@@ -1,4 +1,4 @@
-package observerPattern.observer;
+package ObserverPattern.observer;
 
 public interface NotificationAlertObserver {
 
